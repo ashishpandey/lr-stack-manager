@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@main
 
     - name: install packages
-      run: luarocks install --deps-only lr-stack-manager-dev-1.rockspec
+      run: luarocks install --deps-only lr-stack-manager-dev-1.rockspec RT_DIR=/usr/local
 
     - name: test
       run: busted -c

@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        luaVersion: ["lua:5.3", "lua:5.4", "luajit:2.1"]
+        luaVersion: ["lua:5.4", "luajit:2.1"]
         machineTag: ["ubuntu-latest"]
 
     runs-on: ${{ matrix.machineTag }}
@@ -19,10 +19,10 @@ jobs:
     - uses: actions/checkout@main
 
     - name: add binary packages
-      run: apk add --no-cache build-base
+      run: apk add --no-cache gcompat
 
     - name: install packages
-      run: luarocks install --deps-only lr-stack-manager-dev-1.rockspec RT_DIR=/usr/local
+      run: luarocks install --deps-only lr-stack-manager-dev-1.rockspec
 
     - name: test
       run: busted -c

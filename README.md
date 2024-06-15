@@ -1,6 +1,6 @@
 # Lightroom Stack Manager
 
-![tests](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![tests](https://github.com/ashishpandey/lr-stack-manager/actions/workflows/test.yml/badge.svg)
 
 Lightroom Classic Plugin to manage stacked images
 

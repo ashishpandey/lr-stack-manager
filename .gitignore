@@ -1,0 +1,6 @@
+luacov.stats.out
+debug.txt
+luarocks/
+lua/
+lua_modules/
+.luarocks/

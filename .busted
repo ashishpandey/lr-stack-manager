@@ -1,0 +1,10 @@
+return {
+  _all = {
+    coverage = true,
+    lpath = "stackman.lrdevplugin/?.lua"
+  },
+  default = {
+    ROOT = {"stackman.test"},
+    verbose = true
+  }
+}

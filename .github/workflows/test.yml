@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        luaVersion: ["lua:5.4", "luajit:2.1"]
+        luaVersion: ["lua:5.1", "lua:5.4"]
         machineTag: ["ubuntu-latest"]
 
     runs-on: ${{ matrix.machineTag }}

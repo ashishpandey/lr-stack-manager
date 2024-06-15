@@ -13,5 +13,6 @@ luarocks install --deps-only lr-stack-manager-dev-1.rockspec
 
 ### references
 
-* https://martin-fieber.de/blog/lua-project-setup-with-luarocks
+* [Lua Basics](https://martin-fieber.de/blog/lua-project-setup-with-luarocks)
+* [Lua CI](https://github.com/mpeterv/lua-ci-example)
 

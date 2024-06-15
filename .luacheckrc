@@ -1,2 +1,2 @@
-new_globals = { '_', 'describe' }
-exclude_files = { '**/.*' }
+std = "min"
+files["test/*_spec.lua"].std = "+busted"

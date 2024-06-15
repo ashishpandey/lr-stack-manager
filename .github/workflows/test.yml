@@ -8,12 +8,12 @@ jobs:
       fail-fast: false
       matrix:
         luaVersion: ["lua:5.3", "lua:5.4", "luajit:2.1"]
-        machineTag: ["ubuntu-latest", "macos-latest", "windows-latest"]
+        machineTag: ["ubuntu-latest"]
 
     runs-on: ${{ matrix.machineTag }}
 
     container:
-      image: nickblah/${{ matrix.luaVeersion }}-luarocks
+      image: nickblah/${{ matrix.luaVersion }}-luarocks
 
     steps:
     - uses: actions/checkout@main

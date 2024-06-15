@@ -1,10 +1,11 @@
 return {
   _all = {
     coverage = true,
-    lpath = "stackman.lrdevplugin/?.lua"
+    lpath = "stackman.lrdevplugin/?.lua",
+    helper = "test/setup.lua"
   },
   default = {
-    ROOT = {"stackman.test"},
+    ROOT = {"test"},
     verbose = true
   }
 }

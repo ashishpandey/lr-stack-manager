@@ -7,5 +7,6 @@ return {
     },
 
     lrDialogs = {
+        message = print
     }
 }

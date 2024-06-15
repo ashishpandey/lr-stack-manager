@@ -13,13 +13,13 @@ jobs:
     runs-on: ${{ matrix.machineTag }}
 
     container:
-      image: nickblah/${{ matrix.luaVersion }}-luarocks-alpine
+      image: nickblah/${{ matrix.luaVersion }}-luarocks
 
     steps:
     - uses: actions/checkout@main
 
     - name: add binary packages
-      run: apk add --no-cache gcompat lua-system
+      run: sudo apt-get install build-essential
 
     - name: install packages
       run: luarocks install --deps-only lr-stack-manager-dev-1.rockspec
